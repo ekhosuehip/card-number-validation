@@ -1,9 +1,9 @@
 // Function to validate credit card number
 function validateCreditCard(cardNumber) {
     const cardPatterns = {
-        visa: /^4[0-9]{12}(?:[0-9]{3})?$/, // Visa: Starts with 4, 13 or 16 digits
-        mastercard: /^5[1-5][0-9]{14}$/,   // MasterCard: Starts with 51-55, 16 digits
-        verve: /^((5060|5078|6500)[0-9]{12,15})$/, // Verve: Starts with 5060, 5078, or 6500, 16-19 digits
+        visa: /^4[0-9]{12}(?:[0-9]{3})?$/,
+        mastercard: /^5[1-5][0-9]{14}$/,
+        verve: /^((5060|5078|6500)[0-9]{12,15})$/
     };
 
     for (const [cardType, pattern] of Object.entries(cardPatterns)) {
